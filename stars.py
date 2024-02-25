@@ -2,9 +2,15 @@ from turtle import *
 
 ### Functions
 # Modify code in this section
+speed(0)
 
 def star():
-    pass
+    fillcolor("black")
+    begin_fill()
+    for _ in range (5):
+        forward(25)
+        right(144)
+    end_fill
 
 
 ### The main code that gets run
