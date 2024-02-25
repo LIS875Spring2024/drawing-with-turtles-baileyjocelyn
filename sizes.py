@@ -12,8 +12,22 @@ def star(size):
 ### Main code area
 # Modify code below this line
 
+penup()
+goto(100,0)
+pendown()
 
 star(25)
+
+penup()
+goto(150,0)
+pendown()
+
+star (50)
+
+penup()
+goto(250,0)
+pendown()
+star(100)
 
 done()
 
