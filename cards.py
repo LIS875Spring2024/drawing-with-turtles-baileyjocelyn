@@ -95,7 +95,23 @@ def spade():
 
 #### The main code that gets run
 # Only modify code below this line
+penup()
+goto(100,0)
+pendown()
 
-spade()
+club()
+
+penup()
+goto(200,0)
+pendown()
+
+club()
+
+penup()
+goto(300,0)
+pendown()
+
+diamond()
+
 
 done()
