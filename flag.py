@@ -1,55 +1,29 @@
 from turtle import *
 speed(0)
-setup(800,500)
+setup(600,400)
 
-### Functions for drawing
-# Modify the code in this function
+def bar(color_name, width, height):
+    color(color_name)
+    begin_fill()
+    for _ in range(2):
+        forward(width)
+        right(90)
+        forward(height)
+        right(90)
+    end_fill()
+penup()
+goto(-300,200)
+pendown()
+bar("black", 600, 133)
 
 penup()
-goto(-400,250)
+goto(-300,66)
 pendown()
+bar("red", 600, 133)
 
-### Main code that gets run, to draw the german flag
-# Do not modify code below this line for Exercise 7.  It is OK to add code below this for Exercise 8
-#Black Rectangle
-color("black")
-begin_fill()
-forward(800)
-right(90)
-forward(167)
-right(90)
-forward(800)
-end_fill()
-
-left(90)
-
-#Red Rectangle
-color("red")
-begin_fill()
-forward(167)
-left(90)
-forward(800)
-left(90)
-forward(167)
-end_fill()
-
-
-left(180)
 penup()
-forward(167)
+goto(-300, -67)
 pendown()
-
-#Yellow Rectangle
-color("yellow")
-begin_fill()
-forward(167)
-right(90)
-forward (800)
-right(90)
-forward(167)
-end_fill()
-
+bar("yellow", 600, 133)
 
 done()
-
-    
