@@ -10,6 +10,7 @@ goto(-400,250)
 pendown()
 
 ### Main code that gets run, to draw the german flag
+# Do not modify code below this line for Exercise 7.  It is OK to add code below this for Exercise 8
 #Black Rectangle
 color("black")
 begin_fill()
@@ -48,8 +49,7 @@ right(90)
 forward(167)
 end_fill()
 
-### Main code that gets run, to draw the german flag
-# Do not modify code below this line for Exercise 7.  It is OK to add code below this for Exercise 8
+
 done()
 
     
