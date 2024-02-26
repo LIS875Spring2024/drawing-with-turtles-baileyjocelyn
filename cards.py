@@ -1,4 +1,6 @@
 from turtle import *
+speed(0)
+setup(1000,400)
 
 #####  Functions that draw card shapes
 # Note: Do not modify any code in this section
@@ -66,6 +68,7 @@ def club():
 
 
 def spade():
+    fillcolor("black")
     setheading(0)
     begin_fill()
     forward(15)
@@ -95,23 +98,31 @@ def spade():
 
 #### The main code that gets run
 # Only modify code below this line
-penup()
-goto(100,0)
-pendown()
+def move_next():
+    penup()
+    forward(200)
+    pendown()
 
+penup()
+goto(-200,0)
+pendown()
 club()
+move_next()
+
+penup()
+goto(0,0)
+pendown()
+heart()
+move_next()
 
 penup()
 goto(200,0)
 pendown()
-
-club()
-
-penup()
-goto(300,0)
-pendown()
-
 diamond()
 
+penup()
+goto(400,0)
+pendown()
+spade()
 
 done()
