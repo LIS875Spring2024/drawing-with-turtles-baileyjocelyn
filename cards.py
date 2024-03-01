@@ -99,6 +99,7 @@ def spade():
 #### The main code that gets run
 # Only modify code below this line
 def move_next():
+    setheading(0)
     penup()
     forward(200)
     pendown()
